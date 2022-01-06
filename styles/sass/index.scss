@@ -1,0 +1,202 @@
+@use "generic/normalize";
+@use "generic/box-sizing";
+
+$movil: 575px;
+$tablet: 900px;
+
+/*$primary: #d90429;
+$secondary: #8d99ae;
+$tercero: #a2d2ff;
+
+$colorPrimero: #fff;
+$colorSegundo: #000;
+$colorTercero: #fff;*/
+
+$primary: #2b2d42;
+$secondary: #e9c46a;
+$tercero: #2b2d42;
+
+$colorPrimero: #fff;
+$colorSegundo: #000;
+$colorTercero: #fff;
+
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    background: #fff;
+    color: #000;
+
+    min-height: 100vh;
+}
+
+.g-header {
+    position: sticky;
+    top: 0;
+    background-color: #151f2ecc;
+    backdrop-filter: saturate(180%) blur(5px);
+    font-size: 0.9rem;
+    color: #fff;
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        gap: 1rem;
+        max-width: 1080px;
+        margin: auto;
+
+        @media screen and (max-width: $movil) {
+            margin: 0 1rem;
+        }
+        @media screen and (min-width: $tablet) {
+            margin: auto;
+        }
+    }
+
+    &__brand {
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+
+.m-partida {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+
+    &__afterBola {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    &__beforeBola {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        display: grid;
+        gap: 1rem;
+
+        padding: 1rem;
+    }
+
+    &--title {
+        margin: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+}
+
+.m-bola {
+    border-radius: 9999px;
+    padding: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+
+    @media screen and (max-width: $movil) {
+        padding: 0.6em;
+    }
+    @media screen and (min-width: $tablet) {
+        padding: 0.8rem;
+    }
+
+    &--primary {
+        border: 3px solid $primary;
+        background-color: $primary;
+        color: $colorPrimero;
+        font-size: 7rem;
+
+        @media screen and (max-width: $movil) {
+            font-size: 1.1rem;
+        }
+        @media screen and (min-width: $tablet) {
+            font-size: 4rem;
+        }
+    }
+
+    &--secondary {
+        border: 3px solid $secondary;
+        background-color: $secondary;
+        color: $colorSegundo;
+        font-size: 2.5rem;
+
+        @media screen and (max-width: $movil) {
+            font-size: 1rem;
+        }
+        @media screen and (min-width: $tablet) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &--lista {
+        border: 3px solid #000;
+        font-size: 1.3rem;
+
+        @media screen and (max-width: $movil) {
+            font-size: 1rem;
+        }
+        @media screen and (min-width: $tablet) {
+            font-size: 1rem;
+        }
+    }
+
+    &--active {
+        border: 3px solid $tercero;
+        background-color: $tercero;
+        color: $colorTercero;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.m-tablero {
+    &__bolas {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        gap: 1rem;
+    }
+    &__title {
+        text-align: center;
+        font-size: 2rem;
+
+        @media screen and (max-width: $movil) {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.a-btn {
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #1d3557;
+    color: #f1faee;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    font-size: 2rem;
+
+    @media screen and (max-width: $movil) {
+        font-size: 1.1rem;
+    }
+    @media screen and (min-width: $tablet) {
+        font-size: 1.4rem;
+    }
+}
+
+.m-relleno {
+    padding: 1rem;
+}
