@@ -14,11 +14,7 @@ export default function speak({ numero }) {
         utterThis.volume = 1
         synth.cancel()
         synth.speak(utterThis)
-
-
     }
-
-
 
 }
 

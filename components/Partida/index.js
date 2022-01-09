@@ -28,6 +28,7 @@ export default function Partida({ bolasJugando }) {
         }
     }
 
+
     useEffect(() => {
         speak({ numero: bolaActual })
     }, [bolaActual])

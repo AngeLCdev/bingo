@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Header() {
@@ -9,7 +10,16 @@ export default function Header() {
                 <div className="">
                     <Link href={'/'}>
                         <a>
-                            <h2 className="g-header__brand-text">Mae Mia "El Bingo"</h2>
+
+
+                            <Image
+                                src={`/logo.png`}
+                                alt="Logo Principal"
+                                width={160}
+                                height={70}
+                                placeholder="blur"
+                                blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8egYAArwBw06rL9wAAAAASUVORK5CYII="
+                            />
                         </a>
                     </Link>
                 </div>
