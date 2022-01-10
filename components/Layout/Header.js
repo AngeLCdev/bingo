@@ -20,6 +20,8 @@ export default function Header() {
                                 placeholder="blur"
                                 blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8egYAArwBw06rL9wAAAAASUVORK5CYII="
                             />
+
+                            Cipoooteee
                         </a>
                     </Link>
                 </div>
