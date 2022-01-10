@@ -21,7 +21,7 @@ export default function Header() {
                                 blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8egYAArwBw06rL9wAAAAASUVORK5CYII="
                             />
 
-                            Cipoooteee
+
                         </a>
                     </Link>
                 </div>
