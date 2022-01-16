@@ -28,9 +28,11 @@ export default function Partida({ bolasJugando }) {
         }
     }
 
-
     useEffect(() => {
-        speak({ numero: bolaActual })
+        speak({ numero: bolasSacadas.length, tieneRima: false })
+        speak({ numero: bolaActual, tieneRima: true })
+
+        console.log(bolasSacadas.length)
     }, [bolaActual])
 
     return (
