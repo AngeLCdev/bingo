@@ -5,8 +5,14 @@ import Partida from 'components/Partida'
 import shuffle from "utils/shuffle"
 
 export default function Home() {
+
   const bolasJugando = shuffle()
 
+  if (process.browser) {
+    window.onbeforeunload = () => {
+      return "¿Seguro que quieres reiniciar la partida?"
+    }
+  }
 
   return (
     <>

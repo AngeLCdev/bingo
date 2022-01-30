@@ -1,8 +1,8 @@
 const getEasterEgg = ({ numero }) => {
     const rimas = [
         { num: 1, frase: 'Eeempieza la partida con eel númeroo' },
-        { num: 8, frase: 'Voy a parar un momento, que me voy a poner un cavita' },
-        { num: 21, frase: 'Esperad, que me voy a echar otro cavita. Continuamos' },
+        { num: 12, frase: 'Voy a parar un momento, que me voy a poner un cavita' },
+        { num: 34, frase: 'Esperad, que me voy a echar otro cavita. Continuemos' },
     ]
 
     const rimaNumeroArray = rimas.find(rima => rima.num == parseInt(numero))

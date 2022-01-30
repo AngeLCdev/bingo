@@ -7,7 +7,7 @@ const getRima = ({ numero }) => {
         { num: 6, rima: 'Si os agacháis, me la veis' },
         { num: 8, rima: 'Por el culo te la entocho' },
         { num: 9, rima: 'En tu culo se me mueve' },
-        { num: 13, rima: 'Agarramela que me crece' },
+        { num: 13, rima: 'Agárramela que me crece' },
         { num: 15, rima: 'La niña bonita' },
         { num: 22, rima: 'Los dos patitos' },
         { num: 25, rima: 'Por el culo te la hinco' },
