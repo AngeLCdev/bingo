@@ -6,7 +6,7 @@ import shuffle from "utils/shuffle"
 
 export default function Home() {
 
-  const bolasJugando = shuffle()
+  const bolasJugando = shuffle({ min: 1, max: 90 })
 
   if (process.browser) {
     window.onbeforeunload = () => {

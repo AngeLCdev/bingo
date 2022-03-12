@@ -1,8 +1,8 @@
-export default function getBolas() {
+export default function getBolas({ min, max }) {
     const arrayBolas = []
-    const bolaMax = 90
-
-    for (let i = 1; i <= bolaMax; i++) {
+    let minArray = parseInt(min)
+    let maxArray = parseInt(max)
+    for (let i = minArray; i <= maxArray; i++) {
 
         arrayBolas.push(i < 10 ? `0${i}` : i)
     }

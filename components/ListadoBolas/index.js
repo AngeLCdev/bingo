@@ -6,7 +6,7 @@ import getBolas from "utils/getBolas"
 
 export default function ListadoBolas({ bolasSacadas }) {
 
-    const bolasTablero = getBolas()
+    const bolasTablero = getBolas({ min: 1, max: 90 })
     return (
         <div className="m-relleno">
 

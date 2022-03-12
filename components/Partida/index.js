@@ -32,7 +32,6 @@ export default function Partida({ bolasJugando }) {
         speak({ numero: bolasSacadas.length, tieneRima: false })
         speak({ numero: bolaActual, tieneRima: true })
 
-        console.log(bolasSacadas.length)
     }, [bolaActual])
 
     return (

@@ -1,8 +1,9 @@
 
 import getBolas from "./getBolas";
 
-export default function shuffle() {
-    let array = getBolas()
+export default function shuffle({ min, max }) {
+
+    let array = getBolas({ min, max })
     let currentIndex = array.length, randomIndex;
 
     // While there remain elements to shuffle...

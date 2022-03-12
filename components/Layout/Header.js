@@ -7,24 +7,25 @@ export default function Header() {
         <div className="g-header__wrap">
 
             <div className="g-header__brand">
-                <div className="">
-                    <Link href={'/'}>
-                        <a>
 
+                <Link href={'/'}>
+                    <a>
+                        <Image
+                            src={`/logo.png`}
+                            alt="Logo Principal"
+                            width={160}
+                            height={70}
+                            placeholder="blur"
+                            blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8egYAArwBw06rL9wAAAAASUVORK5CYII="
+                        />
+                    </a>
+                </Link>
+                <Link href={'/sorteo'}>
+                    <a>
+                        Sorteo
+                    </a>
+                </Link>
 
-                            <Image
-                                src={`/logo.png`}
-                                alt="Logo Principal"
-                                width={160}
-                                height={70}
-                                placeholder="blur"
-                                blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8egYAArwBw06rL9wAAAAASUVORK5CYII="
-                            />
-
-
-                        </a>
-                    </Link>
-                </div>
             </div>
 
         </div>
