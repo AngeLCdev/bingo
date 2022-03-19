@@ -34,7 +34,7 @@ export default function Sorteo() {
         <div className="m-partida">
             <Resultado ganador={ganador} />
             <div className="">
-                <Form setNumerosSorteo={setNumerosSorteo} setNGanadores={setNGanadores} />
+                <Form setNumerosSorteo={setNumerosSorteo} setNGanadores={setNGanadores} setIndexActual={setIndexActual} />
                 {numerosSorteo.length > 0 && <div className="m-relleno"><button className='a-btn' onClick={onClick}>Siguiente</button></div>}
             </div>
         </div>

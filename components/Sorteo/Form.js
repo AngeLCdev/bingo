@@ -3,7 +3,7 @@ import Input from 'components/Ui/Form/Input'
 import useField from 'hooks/useField'
 import shuffle from 'utils/shuffle'
 
-export default function Form({ setNumerosSorteo, setNGanadores }) {
+export default function Form({ setNumerosSorteo, setNGanadores, setIndexActual }) {
     const minimoField = useField()
     const maximoField = useField()
     const nGanadoresField = useField()
@@ -12,6 +12,7 @@ export default function Form({ setNumerosSorteo, setNGanadores }) {
         e.preventDefault()
         setNumerosSorteo(shuffle({ min: minimoField.value, max: maximoField.value }))
         setNGanadores(nGanadoresField.value)
+        setIndexActual(0)
     }
     return (
         <div className='m-relleno'>
