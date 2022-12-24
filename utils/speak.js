@@ -13,7 +13,7 @@ export default function speak({ numero, tieneRima }) {
         tieneRima && speaker(numeroSpeak)
         speaker(rima)
         if (tieneRima && digitos.length == 2) {
-            digitos.forEach(num => speaker(num))
+            //digitos.forEach(num => speaker(num))
         }
 
 

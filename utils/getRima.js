@@ -14,9 +14,9 @@ const getRima = ({ numero }) => {
         { num: 22, rima: 'Los dos patitos' },
         /*{ num: 25, rima: 'Por el culo te la hinco' },
         { num: 35, rima: 'Por el culo te la hinco' },
-        { num: 45, rima: 'Por el culo te la hinco' },
+        { num: 45, rima: 'Por el culo te la hinco' },*/
         { num: 55, rima: 'Doble Por el culo te la hinco' },
-        { num: 65, rima: 'Por el culo te la hinco' },
+        /*{ num: 65, rima: 'Por el culo te la hinco' },
         { num: 75, rima: 'Por el culo te la hinco' },
         { num: 85, rima: 'Por el culo te la hinco' },*/
         //{ num: 69, rima: 'El de abajo ni se mueve' },
