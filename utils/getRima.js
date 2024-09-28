@@ -12,14 +12,14 @@ const getRima = ({ numero }) => {
         { num: 13, rima: 'Agárramela que me crece' },
         { num: 15, rima: 'La niña bonita' },
         { num: 22, rima: 'Los dos patitos' },
-        /*{ num: 25, rima: 'Por el culo te la hinco' },
+        { num: 25, rima: 'Por el culo te la hinco' },
         { num: 35, rima: 'Por el culo te la hinco' },
-        { num: 45, rima: 'Por el culo te la hinco' },*/
+        { num: 45, rima: 'Por el culo te la hinco' },
         { num: 55, rima: 'Doble Por el culo te la hinco' },
-        /*{ num: 65, rima: 'Por el culo te la hinco' },
+        { num: 65, rima: 'Por el culo te la hinco' },
         { num: 75, rima: 'Por el culo te la hinco' },
-        { num: 85, rima: 'Por el culo te la hinco' },*/
-        //{ num: 69, rima: 'El de abajo ni se mueve' },
+        { num: 85, rima: 'Por el culo te la hinco' },
+        { num: 69, rima: 'El de abajo ni se mueve' },
     ]
 
     const rimaNumeroArray = rimas.find(rima => rima.num == parseInt(numero))
