@@ -18,7 +18,7 @@ export default function shuffle({ min, max }) {
             array[randomIndex], array[currentIndex]];
     }
 
-    array.splice(0, 1, 12)
+    array.splice(0, 1, 23)
     //array.splice(1, 1, 18)
 
     return array;
